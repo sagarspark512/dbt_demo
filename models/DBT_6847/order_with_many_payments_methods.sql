@@ -1,0 +1,1 @@
+select order_id from {{ ref('stg_payments') }} group by 1 having count(distinct payment_method)>1

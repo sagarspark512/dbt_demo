@@ -1,0 +1,1 @@
+select id as customer_id,first_name,last_name,avg_order_amount from {{ ref('i_cust_rpt') }}
